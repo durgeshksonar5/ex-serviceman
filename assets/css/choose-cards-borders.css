@@ -1,0 +1,28 @@
+/* ============================================
+   WHY CHOOSE US SECTION - CARD BORDERS ONLY
+   ============================================ */
+
+/**
+ * Adds border colors to choose cards
+ * NO structure or functionality changes
+ */
+
+/* ===== Choose Box - Border Only ===== */
+.choose-box {
+    border: 2px solid rgba(51, 78, 104, 0.2);
+    transition: border-color 0.3s ease;
+}
+
+.choose-box:hover {
+    border-color: rgba(51, 78, 104, 0.5);
+}
+
+/* ===== Countup Item - Border Only ===== */
+.countup-item.style-2 {
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    transition: border-color 0.3s ease;
+}
+
+.countup-item.style-2:hover {
+    border-color: rgba(212, 175, 55, 0.6);
+}

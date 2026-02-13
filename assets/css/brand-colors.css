@@ -1,0 +1,346 @@
+/* ============================================
+   PREMIUM CORPORATE COLOR PALETTE APPLICATION
+   Ex-Serviceman Security & Manpower Agency
+   ============================================ */
+
+/**
+ * This file applies the approved premium corporate
+ * color palette to the existing website WITHOUT
+ * changing structure, layout, or functionality.
+ * 
+ * STRICT RULES FOLLOWED:
+ * ✅ Only color changes
+ * ✅ No HTML structure changes
+ * ✅ No layout modifications
+ * ✅ No JavaScript changes
+ * ✅ Premium, elite, high-trust appearance
+ */
+
+:root {
+    /* ===== APPROVED PREMIUM CORPORATE COLOR PALETTE ===== */
+    
+    /* Primary Color - Navbar, Headers, Primary Buttons, Footer */
+    --brand-primary: #0B1C2D;          /* Midnight Blue */
+    
+    /* Secondary Color - Links, Hover States, Secondary Buttons, Icons */
+    --brand-secondary: #334E68;         /* Slate Blue */
+    
+    /* Main Background - Body / Page Background */
+    --brand-bg-main: #F9FAFB;          /* Soft White */
+    
+    /* Cards / Sections / Service Boxes / Alternate Rows */
+    --brand-bg-cards: #E5E7EB;         /* Light Gray */
+    
+    /* Primary Text Color - Headings, Paragraphs, Lists */
+    --brand-text: #111827;             /* Almost Black */
+    
+    /* Accent Color - Badges, Stars, Separators, Highlights ONLY */
+    --brand-accent: #D4AF37;           /* Soft Gold */
+    
+    /* ===== COLOR MAPPING TO EXISTING SYSTEM ===== */
+    
+    /* Override existing color variables with brand colors */
+    
+    /* Primary Navy → Midnight Blue */
+    --primary-navy: var(--brand-primary);
+    
+    /* Secondary Steel Blue → Slate Blue */
+    --secondary-steel-blue: var(--brand-secondary);
+    
+    /* Accent → Soft Gold */
+    --accent-red: var(--brand-accent);
+    
+    /* Gold Medal → Soft Gold */
+    --gold-medal: var(--brand-accent);
+    
+    /* Gold Star → Soft Gold */
+    --gold-star: var(--brand-accent);
+    
+    /* Military Black → Almost Black */
+    --military-black: var(--brand-text);
+    
+    /* White → Soft White */
+    --white: var(--brand-bg-main);
+    
+    /* ===== SPECIFIC ELEMENT COLOR REFINEMENTS ===== */
+    
+    /* Headings - Almost Black */
+    --tj-color-heading-primary: var(--brand-text);
+    
+    /* Body Text - Almost Black */
+    --tj-color-text-body: var(--brand-text);
+    --tj-color-text-body-2: var(--brand-secondary);
+    --tj-color-text-body-3: var(--brand-text);
+    --tj-color-text-body-4: var(--brand-text);
+    
+    /* Theme Primary - Midnight Blue */
+    --tj-color-theme-primary: var(--brand-primary);
+    
+    /* Backgrounds */
+    --tj-color-theme-bg: var(--brand-bg-main);
+    --tj-color-theme-bg-2: var(--brand-bg-cards);
+    --tj-color-theme-bg-3: var(--brand-primary);
+    
+    /* Dark Sections */
+    --tj-color-theme-dark: var(--brand-primary);
+    --tj-color-theme-dark-2: var(--brand-text);
+    --tj-color-theme-dark-3: var(--brand-primary);
+    --tj-color-theme-dark-4: var(--brand-secondary);
+    --tj-color-theme-dark-5: var(--brand-secondary);
+    
+    /* Accent / Highlight */
+    --tj-color-red-1: var(--brand-accent);
+    
+    /* Gray Tones */
+    --tj-color-grey-1: var(--brand-bg-main);
+    --tj-color-grey-2: var(--brand-secondary);
+    
+    /* Common Colors */
+    --tj-color-common-white: var(--brand-bg-main);
+    --tj-color-common-black: var(--brand-text);
+    
+    /* Borders */
+    --tj-color-border-1: rgba(17, 24, 39, 0.1);
+    --tj-color-border-2: rgba(17, 24, 39, 0.2);
+    --tj-color-border-3: rgba(249, 250, 251, 0.15);
+    --tj-color-border-4: rgba(249, 250, 251, 0.2);
+    --tj-color-border-5: rgba(11, 28, 45, 0.15);
+}
+
+/* ===== SPECIFIC COMPONENT COLOR REFINEMENTS ===== */
+
+/* CTA Buttons - Midnight Blue Primary */
+.tj-primary-btn {
+    background-color: var(--brand-accent);
+}
+
+.tj-primary-btn:hover {
+    background-color: #071420; /* Slightly darker Midnight Blue */
+}
+
+/* Secondary Buttons - Slate Blue */
+.tj-secondary-btn,
+.tj-btn-outline {
+    border-color: var(--brand-secondary);
+    color: var(--brand-secondary);
+}
+
+.tj-secondary-btn:hover,
+.tj-btn-outline:hover {
+    background-color: var(--brand-secondary);
+    color: var(--brand-bg-main);
+}
+
+/* Links - Slate Blue */
+a {
+    color: var(--brand-secondary);
+}
+
+a:hover {
+    color: #1F3A52; /* Darker shade of Slate Blue */
+}
+
+/* Accent Elements - Soft Gold (Sparingly ≤10%) */
+.accent-icon,
+.highlight-badge,
+.special-marker {
+    color: var(--brand-accent);
+}
+
+/* Active States - Midnight Blue */
+.active,
+.current,
+.selected {
+    color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+/* Focus States - Slate Blue */
+*:focus,
+*:focus-visible {
+    outline-color: var(--brand-secondary);
+}
+
+/* Selection - Midnight Blue Background */
+::selection {
+    background: var(--brand-primary);
+    color: var(--brand-bg-main);
+}
+
+::-moz-selection {
+    background: var(--brand-primary);
+    color: var(--brand-bg-main);
+}
+
+/* Scrollbar - Midnight Blue */
+::-webkit-scrollbar-thumb {
+    background: var(--brand-primary);
+}
+
+* {
+    scrollbar-color: var(--brand-primary) var(--brand-bg-main);
+}
+
+/* ===== FOOTER SPECIFIC COLORS ===== */
+
+/* Footer Links - Ensure visibility on dark bg */
+.footer-widget a {
+    color: rgba(249, 250, 251, 0.9);
+}
+
+.footer-widget a:hover {
+    color: var(--brand-bg-main);
+}
+
+/* Footer Headings */
+.footer-widget .title {
+    color: var(--brand-bg-main);
+}
+
+/* ===== HEADER/NAVIGATION COLORS ===== */
+
+/* Navigation Links - Almost Black */
+.tj-header-area .main-menu ul li a {
+    color: var(--brand-text);
+}
+
+.tj-header-area .main-menu ul li a:hover,
+.tj-header-area .main-menu ul li.current-menu-item a {
+    color: var(--brand-secondary);
+}
+
+/* ===== ICON COLORS ===== */
+
+/* Primary Icons - Slate Blue */
+.icon-primary,
+.service-icon,
+.feature-icon {
+    color: var(--brand-secondary);
+}
+
+/* Accent Icons - Soft Gold (sparingly) */
+.icon-accent,
+.star-icon,
+.award-icon {
+    color: var(--brand-accent);
+}
+
+/* ===== BORDER COLORS ===== */
+
+/* Primary Borders */
+.border-primary {
+    border-color: var(--brand-bg-cards);
+}
+
+/* Accent Borders */
+.border-accent {
+    border-color: var(--brand-secondary);
+}
+
+/* ===== BACKGROUND VARIATIONS ===== */
+
+/* Light Backgrounds */
+.bg-light,
+.bg-white {
+    background-color: var(--brand-bg-main);
+}
+
+/* Card Backgrounds */
+.bg-gray {
+    background-color: var(--brand-bg-cards);
+}
+
+/* Dark Backgrounds */
+.bg-dark {
+    background-color: var(--brand-primary);
+}
+
+/* Primary Backgrounds */
+.bg-primary {
+    background-color: var(--brand-primary);
+}
+
+/* ===== BADGE COLORS ===== */
+
+/* Badges - Midnight Blue */
+.badge,
+.badge-new {
+    background-color: var(--brand-primary);
+    color: var(--brand-bg-main);
+}
+
+/* Info Badge */
+.badge-info {
+    background-color: var(--brand-secondary);
+    color: var(--brand-bg-main);
+}
+
+/* Accent Badge - Soft Gold */
+.badge-warning {
+    background-color: var(--brand-accent);
+    color: var(--brand-text);
+}
+
+/* ===== FORM ELEMENTS ===== */
+
+/* Input Focus */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--brand-secondary);
+    outline-color: var(--brand-secondary);
+}
+
+/* Submit Buttons - Midnight Blue */
+input[type="submit"],
+button[type="submit"] {
+    background-color: var(--brand-accent);
+    color: var(--brand-bg-main);
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #071420; /* Slightly darker */
+}
+
+/* ===== ACCESSIBILITY & CONTRAST ===== */
+
+.text-on-dark {
+    color: var(--brand-bg-main);
+}
+
+.text-on-light {
+    color: var(--brand-text);
+}
+
+/* ===== NOTES ===== */
+
+/**
+ * COLOR USAGE SUMMARY:
+ * 
+ * MIDNIGHT BLUE (#0B1C2D):
+ * - Navbar, Headers, Primary Buttons, Footer
+ * - Dark section backgrounds
+ * - Primary button backgrounds
+ * 
+ * SLATE BLUE (#334E68):
+ * - Links, Hover States, Secondary Buttons, Icons
+ * - Navigation hover color
+ * - Secondary text
+ * 
+ * SOFT WHITE (#F9FAFB):
+ * - Body/Page background
+ * - Text on dark backgrounds
+ * 
+ * LIGHT GRAY (#E5E7EB):
+ * - Cards, Sections, Panels
+ * - Alternate row backgrounds
+ * 
+ * ALMOST BLACK (#111827):
+ * - Headings, Paragraphs, Lists
+ * - Primary text color
+ * 
+ * SOFT GOLD (#D4AF37):
+ * - Badges, Stars, Separators, Highlights
+ * - Used sparingly (≤10%) for premium feel
+ */

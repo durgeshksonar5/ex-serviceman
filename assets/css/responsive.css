@@ -1,0 +1,650 @@
+﻿/* ============================================
+   FOOTER RESPONSIVE FIXES & ENHANCEMENTS
+   ============================================ */
+
+/* ===== Footer CTA Section - Mobile Fixes ===== */
+.footer-cta {
+    margin-bottom: 30px;
+}
+
+.footer-cta .cta-title {
+    font-size: clamp(24px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.footer-cta .cta-btn {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.footer-cta .customers ul {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-cta .customers ul li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(249, 250, 251, 0.2);
+}
+
+.footer-cta .customers ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== Newsletter Section - Mobile Fixes ===== */
+.widget-subscribe-3 .title {
+    font-size: clamp(18px, 4vw, 24px);
+    margin-bottom: 20px;
+}
+
+.subscribe-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid rgba(249, 250, 251, 0.2);
+    background: rgba(249, 250, 251, 0.05);
+    border-radius: 8px;
+    color: #F9FAFB;
+    font-size: 14px;
+}
+
+.subscribe-form input[type="email"]::placeholder {
+    color: rgba(249, 250, 251, 0.5);
+}
+
+.subscribe-form label[for="agree"] {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(249, 250, 251, 0.7);
+    margin: 0;
+}
+
+.subscribe-form label[for="agree"] input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.subscribe-form label[for="agree"] a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+/* ===== Footer Main Area - Column Responsiveness ===== */
+.footer-main-area {
+    padding: 60px 0 0px;
+}
+
+/* Mobile: Center footer logo */
+@media (max-width: 768px) {
+    .footer-logo {
+        display: flex !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    .footer-logo a {
+        display: inline-block !important;
+        margin: 0 auto !important;
+    }
+}
+
+.footer-widget {
+    margin-bottom: 40px;
+}
+
+.footer-widget .title {
+    font-size: clamp(18px, 3.5vw, 22px);
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #111827; /* Almost Black for maximum visibility */
+    letter-spacing: 0.5px;
+}
+
+.footer-text p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: rgba(249, 250, 251, 0.7);
+}
+
+/* Award Logos */
+.award-logo-area {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.award-logo {
+    max-width: 80px;
+}
+
+.award-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Navigation Menu - Enhanced Visibility */
+.widget-nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-nav-menu ul li {
+    margin-bottom: 4px;
+}
+
+.widget-nav-menu ul li a {
+    color: rgba(249, 250, 251, 0.9); /* Soft White at high opacity for visibility */
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.widget-nav-menu ul li a:hover {
+    color: #F9FAFB;
+    padding-left: 5px;
+    text-shadow: 0 0 8px rgba(249, 250, 251, 0.3);
+}
+
+/* Ensure Services and Resources links are clearly visible */
+.footer-col-2 ul li a,
+.footer-col-3 ul li a {
+    color: #111827; /* Almost Black for maximum visibility */
+    font-weight: 500; /* Slightly bolder */
+}
+
+.footer-col-2 ul li a:hover,
+.footer-col-3 ul li a:hover {
+    color: #334E68; /* Slate Blue on hover */
+    transform: translateX(5px);
+}
+
+.widget-nav-menu ul li a .badge {
+    background: #0B1C2D;
+    color: #F9FAFB;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+/* ===== Our Office Section with Map ===== */
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-item span,
+.contact-item a {
+    color: rgba(249, 250, 251, 0.7);
+    font-size: 14px;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #F9FAFB;
+}
+
+.contact-item i {
+    margin-right: 8px;
+    color: rgba(249, 250, 251, 0.5);
+}
+
+/* Google Map Styling */
+.office-map {
+    margin-top: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.office-map iframe {
+    width: 100%;
+    height: 180px;
+    border: none;
+    display: block;
+    filter: grayscale(20%) contrast(1.1);
+}
+
+/* ===== Copyright Section - Mobile Fixes ===== */
+.tj-copyright-area-4 {
+    padding: 30px 0;
+    border-top: 1px solid rgba(249, 250, 251, 0.1);
+}
+
+.copyright-content-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(249, 250, 251, 0.6);
+}
+
+.copyright-text a {
+    color: #F9FAFB;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.copyright-text a:hover {
+    text-decoration: underline;
+}
+
+/* Social Links */
+.social-links ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(249, 250, 251, 0.1);
+    color: #F9FAFB;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.social-links ul li a:hover {
+    background: rgba(249, 250, 251, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Ensure Font Awesome icons are visible */
+.social-links i[class*="fa-"] {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free";
+    font-weight: 400;
+    display: inline-block;
+}
+
+/* Copyright Menu */
+.copyright-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.copyright-menu ul li a {
+    color: rgba(249, 250, 251, 0.6);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.copyright-menu ul li a:hover {
+    color: #F9FAFB;
+}
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .footer-top {
+        padding: 40px 0;
+    }
+    
+    .footer-cta {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .footer-cta .cta-btn {
+        justify-content: center;
+    }
+    
+    .widget-subscribe-3 {
+        text-align: center;
+    }
+    
+    .footer-main-area {
+        padding: 40px 0 30px;
+    }
+    
+    /* Footer grid: logo full width on top, lists side by side, map full width */
+    .footer-main-area .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    /* Logo + description column: full width, centered */
+    .footer-main-area .row > .col-xl-3:first-child {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .footer-main-area .row > .col-xl-3:first-child .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-main-area .row > .col-xl-3:first-child .footer-logo a {
+        display: inline-block;
+    }
+    
+    .footer-main-area .row > .col-xl-3:first-child .footer-text {
+        text-align: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Services list (2nd column): 50% width */
+    .footer-main-area .row > .col-xl-3:nth-child(2) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    /* Resources list (3rd column): 50% width */
+    .footer-main-area .row > .col-xl-3:nth-child(3) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    /* Map column: full width, centered */
+    .footer-main-area .row > .col-xl-3:last-child {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .footer-main-area .row > .col-xl-3:last-child .footer-widget {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-main-area .row > .col-xl-3:last-child .footer-widget .title {
+        text-align: center;
+    }
+    
+    .footer-main-area .row > .col-xl-3:last-child .office-map {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .footer-widget {
+        margin-bottom: 20px;
+    }
+    
+    .widget-nav-menu ul li a:hover {
+        padding-left: 0;
+    }
+    
+    .award-logo-area {
+        justify-content: center;
+    }
+    
+    .copyright-content-area {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .copyright-text br {
+        display: none;
+    }
+    
+    .social-links {
+        order: -1;
+    }
+    
+    .copyright-menu {
+        order: 1;
+    }
+}
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+    .footer-top {
+        padding: 30px 0;
+    }
+    
+    .footer-cta .cta-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-cta .customers ul li {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .footer-cta .cta-btn {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+    
+    .widget-subscribe-3 .title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .subscribe-form input[type="email"] {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+    
+    .subscribe-form label[for="agree"] {
+        font-size: 12px;
+    }
+    
+    .footer-main-area {
+        padding: 30px 0 20px;
+    }
+    
+    .footer-widget {
+        margin-bottom: 20px;
+    }
+    
+    .footer-widget .title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-text p {
+        font-size: 13px;
+    }
+    
+    .widget-nav-menu ul li {
+        margin-bottom: 2px;
+    }
+    
+    .widget-nav-menu ul li a {
+        font-size: 13px;
+    }
+
+    /* Keep lists side by side on small screens */
+    .footer-main-area .row > .col-xl-3:nth-child(2),
+    .footer-main-area .row > .col-xl-3:nth-child(3) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .office-map iframe {
+        height: 180px;
+    }
+    
+    .tj-copyright-area-4 {
+        padding: 20px 0;
+    }
+    
+    .copyright-text p {
+        font-size: 12px;
+    }
+    
+    .social-links ul {
+        gap: 10px;
+    }
+    
+    .social-links ul li a {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+    
+    .copyright-menu ul {
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .copyright-menu ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile (360px and below) */
+@media (max-width: 360px) {
+    .footer-cta .cta-title {
+        font-size: 20px;
+    }
+    
+    .footer-cta .customers ul {
+        gap: 5px;
+    }
+    
+    .footer-cta .customers ul li {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .widget-subscribe-3 .title {
+        font-size: 16px;
+    }
+    
+    .footer-widget .title {
+        font-size: 16px;
+    }
+    
+    .social-links ul {
+        gap: 8px;
+    }
+    
+    .social-links ul li a {
+        width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+    
+    .copyright-menu ul {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===== ICON FIXES ===== */
+
+/* Ensure tji icons are visible */
+i[class*="tji-"] {
+    display: inline-block;
+    font-style: normal;
+    line-height: 1;
+}
+
+/* Ensure Font Awesome icons load properly */
+i[class*="fa-"] {
+    font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free";
+    font-weight: 900;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Brands icons should have font-weight 400 */
+i[class*="fa-brands"] {
+    font-weight: 400;
+}
+
+/* Fix for arrow icons in buttons */
+.tj-primary-btn .btn-icon i {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Focus states for keyboard navigation */
+.footer-widget a:focus,
+.subscribe-form input:focus,
+.subscribe-form button:focus {
+    outline: 2px solid rgba(249, 250, 251, 0.5);
+    outline-offset: 2px;
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+    .copyright-content-area .social-links ul {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+    .social-links ul li a {
+        width: 40px !important;
+        height: 40px !important;
+        min-height: unset !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .copyright-menu ul li a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+

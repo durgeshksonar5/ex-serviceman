@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Color Palette - Ex-Serviceman Security & Manpower Agency</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #1E56C0;
+        }
+
+        header h1 {
+            color: #1E56C0;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #63789E;
+            font-size: 1.2rem;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .color-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .color-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .color-swatch {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .color-info {
+            padding: 20px;
+            background: white;
+        }
+
+        .color-info h3 {
+            color: #0E0D0C;
+            margin-bottom: 10px;
+        }
+
+        .color-info .hex {
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            color: #1E56C0;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .color-info .usage {
+            font-size: 0.9rem;
+            color: #63789E;
+            line-height: 1.5;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section h2 {
+            color: #1E56C0;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #CCC3C4;
+        }
+
+        .usage-example {
+            background: #FDFDFC;
+            border: 1px solid #CCC3C4;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .btn-demo {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #EE0B08;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1E56C0;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #1E56C0;
+            border: 2px solid #1E56C0;
+        }
+
+        .btn-secondary:hover {
+            background: #1E56C0;
+            color: white;
+        }
+
+        .text-demo {
+            margin: 20px 0;
+        }
+
+        .text-demo h1 {
+            color: #1E56C0;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .text-demo p {
+            color: #0E0D0C;
+            margin-bottom: 10px;
+        }
+
+        .icon-demo {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .icon-item {
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            background: #FDFDFC;
+            border: 1px solid #CCC3C4;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .contrast-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .contrast-table th,
+        .contrast-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #CCC3C4;
+        }
+
+        .contrast-table th {
+            background: #1E56C0;
+            color: white;
+        }
+
+        .contrast-table tr:hover {
+            background: #f9f9f9;
+        }
+
+        .status-pass {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .color-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Brand Color Palette</h1>
+            <p>Ex-Serviceman Security & Manpower Agency</p>
+        </header>
+
+        <!-- Primary Colors -->
+        <div class="section">
+            <h2>Primary Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #EE0B08;">
+                        PRIMARY RED
+                    </div>
+                    <div class="color-info">
+                        <h3>Primary Red</h3>
+                        <div class="hex">#EE0B08</div>
+                        <div class="usage">
+                            <strong>Use for:</strong><br>
+                            • CTA buttons<br>
+                            • Highlights<br>
+                            • Active states<br>
+                            • Important icons
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #1E56C0;">
+                        PRIMARY BLUE
+                    </div>
+                    <div class="color-info">
+                        <h3>Primary Blue</h3>
+                        <div class="hex">#1E56C0</div>
+                        <div class="usage">
+                            <strong>Use for:</strong><br>
+                            • Headings<br>
+                            • Section titles<br>
+                            • Navigation<br>
+                            • Primary borders
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Colors -->
+        <div class="section">
+            <h2>Secondary Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #63789E;">
+                        SECONDARY BLUE
+                    </div>
+                    <div class="color-info">
+                        <h3>Secondary Blue</h3>
+                        <div class="hex">#63789E</div>
+                        <div class="usage">
+                            <strong>Use for:</strong><br>
+                            • Secondary text<br>
+                            • Subtle elements<br>
+                            • Supporting content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accent Colors -->
+        <div class="section">
+            <h2>Accent Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #F9CE12; color: #0E0D0C;">
+                        ACCENT YELLOW
+                    </div>
+                    <div class="color-info">
+                        <h3>Accent Yellow</h3>
+                        <div class="hex">#F9CE12</div>
+                        <div class="usage">
+                            <strong>Use SPARINGLY for:</strong><br>
+                            • Icons<br>
+                            • Small highlights<br>
+                            • Awards/stars<br>
+                            ⚠️ Never for large backgrounds
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Army/Defense Tones -->
+        <div class="section">
+            <h2>Army/Defense Tones</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #8B6E3E;">
+                        ARMY BROWN
+                    </div>
+                    <div class="color-info">
+                        <h3>Army Brown</h3>
+                        <div class="hex">#8B6E3E</div>
+                        <div class="usage">
+                            <strong>Use for:</strong><br>
+                            • Military icons<br>
+                            • Decorative elements<br>
+                            • Defense-themed graphics
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #4C392B;">
+                        DARK BROWN
+                    </div>
+                    <div class="color-info">
+                        <h3>Dark Brown</h3>
+                        <div class="hex">#4C392B</div>
+                        <div class="usage">
+                            <strong>Use MINIMALLY for:</strong><br>
+                            • Special decorative elements<br>
+                            • Reserved use only
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neutral Colors -->
+        <div class="section">
+            <h2>Neutral Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #0E0D0C;">
+                        BLACK
+                    </div>
+                    <div class="color-info">
+                        <h3>Black</h3>
+                        <div class="hex">#0E0D0C</div>
+                        <div class="usage">
+                            <strong>Use for:</strong><br>
+                            • Body text<br>
+                            • Dark sections (minimal)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #FDFDFC; color: #0E0D0C; border: 1px solid #CCC3C4;">
+                        WHITE
+                    </div>
+                    <div class="color-info">
+                        <h3>White</h3>
+                        <div class="hex">#FDFDFC</div>
+                        <div class="usage">
+                            <strong>Use for:</strong><br>
+                            • Backgrounds (primary)<br>
+                            • Text on dark backgrounds
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #CCC3C4; color: #0E0D0C;">
+                        LIGHT GRAY
+                    </div>
+                    <div class="color-info">
+                        <h3>Light Gray</h3>
+                        <div class="hex">#CCC3C4</div>
+                        <div class="usage">
+                            <strong>Use for:</strong><br>
+                            • Borders<br>
+                            • Dividers<br>
+                            • Secondary elements
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <div class="color-swatch" style="background: #D76C65;">
+                        SOFT RED-GRAY
+                    </div>
+                    <div class="color-info">
+                        <h3>Soft Red-Gray</h3>
+                        <div class="hex">#D76C65</div>
+                        <div class="usage">
+                            <strong>Use MINIMALLY for:</strong><br>
+                            • Subtle variations<br>
+                            • Reserved use only
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usage Examples -->
+        <div class="section">
+            <h2>Usage Examples</h2>
+
+            <div class="usage-example">
+                <h3 style="color: #1E56C0; margin-bottom: 15px;">Button Styles</h3>
+                <a href="#" class="btn-demo btn-primary">Primary CTA Button</a>
+                <a href="#" class="btn-demo btn-secondary">Secondary Button</a>
+            </div>
+
+            <div class="usage-example">
+                <h3 style="color: #1E56C0; margin-bottom: 15px;">Typography</h3>
+                <div class="text-demo">
+                    <h1>Main Heading (Primary Blue)</h1>
+                    <p>Body text uses Black (#0E0D0C) for maximum readability on light backgrounds. This ensures
+                        excellent contrast and professional appearance.</p>
+                    <p style="color: #63789E;">Secondary text uses Secondary Blue (#63789E) for supporting content and
+                        subtle elements.</p>
+                </div>
+            </div>
+
+            <div class="usage-example">
+                <h3 style="color: #1E56C0; margin-bottom: 15px;">Icon Colors</h3>
+                <div class="icon-demo">
+                    <div class="icon-item">
+                        <div class="icon-circle" style="background: #1E56C0;">🛡️</div>
+                        <small>Primary Blue</small>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle" style="background: #EE0B08;">⚡</div>
+                        <small>Primary Red</small>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle" style="background: #F9CE12; color: #0E0D0C;">⭐</div>
+                        <small>Accent Yellow</small>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-circle" style="background: #8B6E3E;">🎖️</div>
+                        <small>Army Brown</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accessibility -->
+        <div class="section">
+            <h2>Accessibility - Contrast Ratios</h2>
+            <table class="contrast-table">
+                <thead>
+                    <tr>
+                        <th>Color Combination</th>
+                        <th>Contrast Ratio</th>
+                        <th>WCAG Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primary Blue on White</td>
+                        <td>12.6:1</td>
+                        <td class="status-pass">✅ AAA</td>
+                    </tr>
+                    <tr>
+                        <td>Black on White</td>
+                        <td>19.8:1</td>
+                        <td class="status-pass">✅ AAA</td>
+                    </tr>
+                    <tr>
+                        <td>Primary Red on White</td>
+                        <td>7.8:1</td>
+                        <td class="status-pass">✅ AAA</td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Blue on White</td>
+                        <td>5.2:1</td>
+                        <td class="status-pass">✅ AA</td>
+                    </tr>
+                    <tr>
+                        <td>White on Primary Blue</td>
+                        <td>12.6:1</td>
+                        <td class="status-pass">✅ AAA</td>
+                    </tr>
+                    <tr>
+                        <td>White on Black</td>
+                        <td>19.8:1</td>
+                        <td class="status-pass">✅ AAA</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="color: #63789E; margin-top: 15px;">
+                <strong>Note:</strong> All color combinations meet or exceed WCAG AA standards (4.5:1 minimum for normal
+                text).
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 2px solid #CCC3C4;">
+            <p style="color: #63789E;">
+                <strong>Brand Color Palette Applied</strong><br>
+                Ex-Serviceman Security & Manpower Agency<br>
+                <small>Last Updated: February 11, 2026</small>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

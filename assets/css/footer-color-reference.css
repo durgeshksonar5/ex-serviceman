@@ -1,0 +1,58 @@
+/* ============================================
+   FOOTER LINK VISIBILITY - COLOR REFERENCE
+   ============================================ */
+
+/**
+ * ENHANCED FOOTER LINK COLORS FOR MAXIMUM VISIBILITY
+ * Updated to Premium Corporate Color Palette
+ */
+
+/* 1. General Footer Links - Improved Visibility */
+.widget-nav-menu ul li a {
+    color: rgba(249, 250, 251, 0.9);  /* Soft White at 90% opacity */
+    font-weight: 400;
+}
+
+/* 2. Services & Resources Links - Maximum Visibility */
+.footer-col-2 ul li a,
+.footer-col-3 ul li a {
+    color: rgba(249, 250, 251, 0.95);  /* Soft White at 95% opacity */
+    font-weight: 500;
+}
+
+/* 3. Hover States - Bright White */
+.widget-nav-menu ul li a:hover {
+    color: #F9FAFB;  /* Soft White (100%) */
+    text-shadow: 0 0 8px rgba(249, 250, 251, 0.3);
+    padding-left: 5px;
+}
+
+.footer-col-2 ul li a:hover,
+.footer-col-3 ul li a:hover {
+    color: #F9FAFB;
+    transform: translateX(5px);
+}
+
+/* 4. Footer Widget Titles - Maximum Visibility */
+.footer-widget .title {
+    color: #F9FAFB;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* 5. Badge - High Contrast */
+.widget-nav-menu ul li a .badge {
+    background: #0B1C2D;  /* Midnight Blue */
+    color: #F9FAFB;
+    font-weight: 600;
+}
+
+/* ===== ACCESSIBILITY NOTES ===== */
+
+/*
+- Minimum contrast ratio: 4.5:1 (WCAG AA compliant)
+- Links are clearly distinguishable from background
+- Hover states provide clear visual feedback
+- Font weights ensure readability
+- Text shadows are subtle and don't reduce legibility
+*/
