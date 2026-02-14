@@ -122,7 +122,7 @@
                                                 Agency</a> All
                                             right reserved <br>Design & Developed by <a href="#" target="_blank"
                                                 style="display: inline-flex; align-items: center; vertical-align: middle;"><img
-                                                    src="${root}assets/images/hindustan-logo.png"
+                                                    src="${root}assets/images/logo-white.png"
                                                     alt="Hindustan Digital Services"
                                                     style="height: 50px; width: auto; vertical-align: middle; margin-left: 4px;"></a>
                                         </p>

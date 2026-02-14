@@ -96,6 +96,10 @@
                                     </li>
                                     <li class=""><a href="${root}about.html">About Us</a>
                                     </li>
+                                    <li class=""><a href="${root}gallery.html">Gallery</a>
+                                    </li>
+                                    <li class=""><a href="${root}career.html">Career</a>
+                                    </li>
                                     <li class="has-dropdown"><a href="${root}service.html">Services</a>
                                         <ul class="sub-menu  mega-menu-service">
                                             <li> <a class="mega-menu-service-single"

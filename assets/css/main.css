@@ -10000,7 +10000,38 @@ START: Choose CSS
     position: relative;
     overflow: hidden;
     z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.choose-box[data-bg-image]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(11, 28, 45, 0.85), rgba(51, 78, 104, 0.75));
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+
+.choose-box[data-bg-image]:hover::before {
+    background: linear-gradient(45deg, rgba(11, 28, 45, 0.95), rgba(212, 175, 55, 0.8));
+}
+
+.choose-box[data-bg-image] .title,
+.choose-box[data-bg-image] .desc,
+.choose-box[data-bg-image] .choose-icon {
+    color: var(--tj-color-common-white);
+}
+
+.choose-box[data-bg-image] .choose-content {
+    position: relative;
+    z-index: 2;
+}
+
 
 .choose-box .choose-content {
     display: -webkit-box;
@@ -11123,7 +11154,47 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
     -ms-flex-align: start;
     align-items: start;
     text-align: start;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease-in-out;
 }
+
+.countup-item.style-2[data-bg-image]::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(11, 28, 45, 0.85), rgba(51, 78, 104, 0.75));
+    z-index: -1;
+    transition: all 0.4s ease-in-out;
+}
+
+.countup-item.style-2[data-bg-image]:hover::before {
+    background: linear-gradient(45deg, rgba(11, 28, 45, 0.95), rgba(212, 175, 55, 0.8));
+}
+
+.countup-item.style-2[data-bg-image] .count-text,
+.countup-item.style-2[data-bg-image] .inline-content,
+.countup-item.style-2[data-bg-image] .inline-content .odometer,
+.countup-item.style-2[data-bg-image] .inline-content .odometer .odometer-digit,
+.countup-item.style-2[data-bg-image] .inline-content .odometer span,
+.countup-item.style-2[data-bg-image] .steps {
+    color: var(--tj-color-common-white);
+}
+
+.countup-item.style-2[data-bg-image] .count-inner,
+.countup-item.style-2[data-bg-image] .steps,
+.countup-item.style-2[data-bg-image] .count-icon {
+    position: relative;
+    z-index: 2;
+}
+
 
 .countup-item.style-2 .count-inner {
     padding-top: 90px;
@@ -11771,6 +11842,9 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .service-item.style-4 {
+    border: 1px solid rgba(11, 28, 45, 0.1);
+    -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -11811,6 +11885,9 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .service-item.style-4:hover {
     background-color: var(--tj-color-theme-primary);
+    border-color: var(--tj-color-theme-primary);
+    -webkit-box-shadow: 0 20px 50px rgba(11, 28, 45, 0.2);
+    box-shadow: 0 20px 50px rgba(11, 28, 45, 0.2);
 }
 
 .service-item.style-4:hover .service-icon {
