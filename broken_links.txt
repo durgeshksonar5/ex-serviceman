@@ -1,0 +1,3 @@
+footer-testing-guide.html -> FOOTER_IMPROVEMENTS.md (Expected: e:\Durgesh work\ex serviceman\FOOTER_IMPROVEMENTS.md)
+footer-testing-guide.html -> FOOTER_SUMMARY.md (Expected: e:\Durgesh work\ex serviceman\FOOTER_SUMMARY.md)
+assets\js\header-loader.js -> ${homeLink} (Expected: e:\Durgesh work\ex serviceman\assets\js\${homeLink})

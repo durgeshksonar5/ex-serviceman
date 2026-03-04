@@ -102,6 +102,13 @@
                                     </li>
                                     <li class="has-dropdown"><a href="${root}service.html">Services</a>
                                         <ul class="sub-menu  mega-menu-service">
+
+                                        <li> <a class="mega-menu-service-single"
+                                                    href="${root}services/army-trained-licensed-armed-guards-with-authorized-personal-revolvers.html"> <span
+                                                        class="mega-menu-service-title">Army-Trained Licensed with Authorized Personal Revolvers</span> <span class="mega-menu-service-nav"><i
+                                                            class="fa-solid fa-arrow-right"></i><i
+                                                            class="fa-solid fa-arrow-right"></i></span></a></li>
+                                                            
                                             <li> <a class="mega-menu-service-single"
                                                     href="${root}services/security-guard-service.html"> <span
                                                         class="mega-menu-service-title">Security Guard Services</span> <span class="mega-menu-service-nav"><i
